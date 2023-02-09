@@ -11,22 +11,34 @@
         <h3>Novo Estabelecimento</h3>
         <form action="">
             <div class="row mt-5">
-                <div class="col col-md-6">
+                <div class="col col-md-4">
                     <label for="NomeEstabelecimento" class="form-label">Estabelecimento</label>
                     <input type="text" class="form-control" id="NomeEstabelecimento" placeholder="Nome">                    
                 </div>
-                <div class=" col col-md-6 col-md-auto">
+                <div class="col-md-auto col-md-4">
                     <label for="NomeRua" class="form-label">Rua</label>
-                    <input type="text" class="form-control" id="NomeRua" placeholder="Nome">                    
+                    <input type="text" class="form-control" id="NomeRua" placeholder="Ex: Rua 13 de maio">                    
+                </div>               
+                <div class="col-md-auto">
+                        <label for="numero" class="form-label">Número</label>
+                        <input type="text" class="form-control" id="numero" placeholder="Ex: 11">                    
                 </div>
-               
-                <div class="col col-md-6">
-                        <label for="NomeEstabelecimento" class="form-label">Estabelecimento</label>
-                        <input type="text" class="form-control" id="NomeEstabelecimento" placeholder="Nome">                    
+                <div class="col-md-auto col-md-4 mt-4">
+                    <label for="cidade" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" placeholder="Ex: Santo Antônio">                    
                 </div>
-                  
+                <div class="col-md-auto col-md-4 mt-4">
+                    <label for="estado" class="form-label">Estado</label>
+                    <input type="text" class="form-control" id="estado" placeholder="Ex: Bahia">                    
+                </div>    
+                <div class="col-md-auto mt-4">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="cep" placeholder="Ex: 44444-122">                    
+                </div>                  
                 
             </div>
+
+           <button type="submit" class="btn btn-success mt-4"> Cadastrar </button>
 
         </form>
     </div>
