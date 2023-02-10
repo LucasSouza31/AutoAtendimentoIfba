@@ -11,5 +11,10 @@ public String exibirCardapio() {
     return "Cardapio/exibirCardapio";
 }
 
+@GetMapping("/cadastrarCardapio")    
+public String novoCardapio() {
+    return "Cardapio/novoCardapio";
+}
+
 
 }
