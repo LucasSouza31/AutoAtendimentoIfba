@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head th:replace="~{fragmentosPag::head}"></head>
 
 <body class="bg-body-tertiary">
@@ -16,12 +17,13 @@
                     <form action="" >
                         <div class="mb-3">
                             <label for="nomeSessao" class="form-label">Nome da Sessão</label>
-                            <input type="text" class="form-control" id="nomeSessao" placeholder="Massas">
+                            <input type="text" class="form-control" id="nomeSessao" placeholder="Ex: Massas">
                         </div>
                         <div class="mb-3">
                             <label for="descricaoSessao" class="form-label">Descrição</label>
                             <textarea class="form-control" id="descricaoSessao" rows="3"></textarea>
                         </div>
+                        <button type="submit" class="btn btn-success">Enviar</button>
                     </form>
                 </div>
 

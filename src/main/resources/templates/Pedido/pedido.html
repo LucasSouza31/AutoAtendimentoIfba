@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head th:replace="~{fragmentosPag::head}"></head>
+
+<body>
+
+    <nav th:replace="~{fragmentosPag::nav}">usar fragmento</nav>
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col col-6">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Sessão</option>
+                    <option value="1">Bebidas</option>
+                    <option value="2">Massas</option>
+                    <option value="3">Drink's</option>
+                </select>
+
+               <table class="table mt-5">
+
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Valor</th>                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <th>algo</th>
+                        <th>50,00</th>
+                    </tbody>
+
+               </table>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
