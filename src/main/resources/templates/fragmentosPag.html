@@ -10,6 +10,8 @@
  
     <title th:text="${titulo}">Login</title>
 
+    <link rel="stylesheet" href="estilo.css">
+
 </head>
 
 
@@ -21,7 +23,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="/">Home</a>
           <a class="nav-link" href="#">Novo</a>
           <a class="nav-link" href="#"></a>                        
         </div>
@@ -31,8 +33,10 @@
             Menu
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Cardápio</a></li>
-            <li><a class="dropdown-item" href="#">Sessões</a></li>
+            <li><a class="dropdown-item" href="/cardapio">Cardápio</a></li>
+            <li><a class="dropdown-item" href="/cadastrarSessao">Sessões</a></li>
+            <li><a class="dropdown-item" href="/fazerPedido">Pedido</a></li>
+            
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#"></a></li>
           </ul>

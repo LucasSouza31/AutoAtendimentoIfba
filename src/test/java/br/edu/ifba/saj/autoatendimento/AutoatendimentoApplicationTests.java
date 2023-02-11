@@ -1,4 +1,4 @@
-package com.ifba.edu.br.autoatendimento;
+package br.edu.ifba.saj.autoatendimento;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

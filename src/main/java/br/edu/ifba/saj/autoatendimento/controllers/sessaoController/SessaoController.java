@@ -1,4 +1,4 @@
-package com.ifba.edu.br.autoatendimento.Controllers.SessaoController;
+package br.edu.ifba.saj.autoatendimento.controllers.sessaoController;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
