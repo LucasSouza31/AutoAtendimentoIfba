@@ -1,4 +1,4 @@
-package com.ifba.edu.br.autoatendimento.Controllers.CardapioController;
+package br.edu.ifba.saj.autoatendimento.controllers.cardapioController;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
