@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+    <head th:replace="~{fragmentosPag::head('Cadastrar Produto')}"></head>
+<body>
+
+    <nav th:replace="~{fragmentosPag::nav}">usar fragmento</nav>
+
+    <section class="jumbotron">
+        <div class="container mt-5">
+            <h3>Novo Produto</h3>
+            <form action="">
+                <div class="row mt-5">
+                    <div class="col col-md-4">
+                        <label for="NomeProduto" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="NomeProduto" placeholder="Ex: Sanduíche">                    
+                    </div>
+                    <div class="col-md-auto col-md-4">
+                        <label for="TipoProduto" class="form-label">Tipo</label>
+                        <input type="text" class="form-control" id="TipoProduto" placeholder="Ex: Artesanal ">                    
+                    </div>     
+                    <div class="col-md-auto col-md-4">
+                        <label for="valorProduto" class="form-label">Valor</label>
+                        <input type="text" class="form-control" id="valorProduto" placeholder="Ex: R$ 5,00 ">                    
+                    </div>  
+
+                </div>
+                <button type="submit" class="btn btn-success mt-4"> Cadastrar </button>
+            </form>
+        </div>
+    </section>
+
+
+
+</body>
+</html>

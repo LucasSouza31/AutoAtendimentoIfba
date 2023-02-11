@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+    <head th:replace="~{fragmentosPag::head('Produtos')}"></head>
+<body>
+
+    <nav th:replace="~{fragmentosPag::nav}">usar fragmento</nav>
+
+    <section class="jumbotron mt-5">
+        <div class="container">
+            <h3>Estoque</h3>
+            <select class="form-select mt-5" aria-label="Default select example">
+                <option selected>Sessão</option>
+                <option value="1">Bebidas</option>
+                <option value="2">Massas</option>
+                <option value="3">Drink's</option>
+              </select>
+          
+              <table class="table mt-5">
+                <thead>
+                  <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col">Quantidade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>ssss</td>
+                    <td>100,0</td>
+                    <td>dddd</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>    
+        </div>
+    </section>
+
+</body>
+</html>
