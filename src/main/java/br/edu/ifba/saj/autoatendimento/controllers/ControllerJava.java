@@ -11,4 +11,9 @@ public class ControllerJava {
         return "login";
     }
 
+    @GetMapping("")
+    public String inicio() {
+        return "index";
+    }
+
 }
