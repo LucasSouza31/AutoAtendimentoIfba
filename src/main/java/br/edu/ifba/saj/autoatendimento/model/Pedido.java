@@ -16,7 +16,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Pedido {
+public class Pedido extends AbstractEntity{
 
     @ManyToOne
     @Nonnull

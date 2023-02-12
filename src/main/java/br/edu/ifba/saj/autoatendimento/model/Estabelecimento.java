@@ -25,7 +25,7 @@ import lombok.Setter;
   generator = ObjectIdGenerators.PropertyGenerator.class, 
   property = "id")
 
-public class Estabelecimento {
+public class Estabelecimento extends AbstractEntity{
     
     @Nonnull
     private String nome;

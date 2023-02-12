@@ -12,7 +12,7 @@ import lombok.Setter;
 @Entity
 @Getter 
 @Setter
-public class ItemCardapio {
+public class ItemCardapio extends AbstractEntity{
    
     private String descricao;
 

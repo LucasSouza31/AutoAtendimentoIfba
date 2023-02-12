@@ -23,7 +23,7 @@ import lombok.Setter;
 @JsonIdentityInfo(
   generator = ObjectIdGenerators.PropertyGenerator.class, 
   property = "id")
-public class Cardapio {
+public class Cardapio extends AbstractEntity{
     
 
     @Nonnull

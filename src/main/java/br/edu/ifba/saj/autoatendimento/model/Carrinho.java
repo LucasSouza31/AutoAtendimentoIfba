@@ -12,7 +12,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Carrinho {
+public class Carrinho extends AbstractEntity{
     
     @OneToMany(mappedBy = "carrinho")
     private List<Pedido> pedido;

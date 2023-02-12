@@ -21,7 +21,7 @@ import lombok.Setter;
 @JsonIdentityInfo(
   generator = ObjectIdGenerators.PropertyGenerator.class, 
   property = "id")
-public class Sessao {
+public class Sessao extends AbstractEntity{
     
     
     @Nonnull

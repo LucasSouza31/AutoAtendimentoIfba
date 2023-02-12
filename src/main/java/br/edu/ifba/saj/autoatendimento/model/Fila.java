@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 
 @Entity
-public class Fila {
+public class Fila extends AbstractEntity{
     
     @ManyToOne
     private Estabelecimento estabelecimento;
