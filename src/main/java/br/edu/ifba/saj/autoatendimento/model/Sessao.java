@@ -14,30 +14,29 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-
-@Getter
-@Setter
 @Entity
+@Getter@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIdentityInfo(
   generator = ObjectIdGenerators.PropertyGenerator.class, 
   property = "id")
-public class Cardapio {
+public class Sessao {
     
-
+    
     @Nonnull
-    private String nome;
-
+    private String nome; 
+    
     @Nonnull
     private String descricao; 
-    
+
+    @OneToMany(mappedBy = "sessao")
+    private List<ItemCardapio> itemCardapios;
+
     @Nonnull
     @ManyToOne
-    private Estabelecimento estabelecimento;
+    private Cardapio cardapio;
 
-    @OneToMany(mappedBy = "cardapio")
-    private List<Sessao> sessao;
 
 
 
