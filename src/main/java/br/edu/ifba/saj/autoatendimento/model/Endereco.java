@@ -1,14 +1,15 @@
 package br.edu.ifba.saj.autoatendimento.model;
 
 import jakarta.annotation.Nonnull;
+import jakarta.persistence.Entity;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter @Setter
+@Entity
+@Getter
+@Setter
 public class Endereco extends AbstractEntity{
     
-    private int numero;
-
     @Nonnull
     private String rua;
 
