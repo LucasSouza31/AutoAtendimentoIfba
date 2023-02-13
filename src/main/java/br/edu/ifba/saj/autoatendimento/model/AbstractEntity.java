@@ -2,7 +2,7 @@ package br.edu.ifba.saj.autoatendimento.model;
 
 import java.util.UUID;
 
-import org.hibernate.annotations.Type;
+import org.hibernate.annotations.GenericGenerator;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -16,8 +16,11 @@ import lombok.Setter;
 public abstract class AbstractEntity {
     
     @Id
-    @GeneratedValue
-    @Type(type = "uuid-char")//??
+    @GeneratedValue(generator = "UUID")
+    @GenericGenerator(
+        name = "UUID",
+        strategy = "org.hibernate.id.UUIDGenerator"
+    )
     private UUID id;
 
     @Override
