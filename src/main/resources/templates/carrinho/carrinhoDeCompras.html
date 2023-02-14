@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head th:replace="~{fragmentosPag::head('Carrinho')}"></head>
+<body>
+    <nav th:replace="~{fragmentosPag::nav}">usar fragmento</nav>
+
+
+    <div class="container mt-5">
+        <div class="col col-6">
+            <table class="table mt-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Sessão</th>
+                        <th scope="col">Valor</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr>
+                        <td>item</td>
+                        <td>drink</td>
+                        <td>123</td> 
+                    </tr>            
+                    <tr>
+                        <th colspan="2">Total</th>                        
+                        <td>22222</td>
+                    </tr> 
+                </tbody>
+            
+            </table>
+        </div>
+
+    </div>
+
+
+    
+</body>
+</html>

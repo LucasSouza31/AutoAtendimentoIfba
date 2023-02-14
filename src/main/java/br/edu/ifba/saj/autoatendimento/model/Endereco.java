@@ -18,7 +18,8 @@ public class Endereco extends AbstractEntity{
     private String estado;
 
     private String pais;
-
+    
+    @Nonnull
     private String cep;
 
     

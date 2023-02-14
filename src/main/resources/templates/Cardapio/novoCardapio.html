@@ -6,7 +6,38 @@
 <body>
     <nav th:replace="~{fragmentosPag::nav}">usar fragmento</nav>
     
-
+    <section class="jumbotron">
+        <div class="container mt-5">
+            <h3>Novo Caradápio</h3>
+            <form action="">
+                <div class="row mt-5">
+                    <div class="col col-md-4">
+                        <label for="NomeEstabelecimento" class="form-label">Estabelecimento</label>
+                        <input type="text" class="form-control" id="NomeEstabelecimento" placeholder="Nome">                    
+                    </div>
+                    <div class="col-md-auto col-md-4">
+                        <label for="NomeProduto" class="form-label">Nome do Produto</label>
+                        <input type="text" class="form-control" id="NomeProduto" placeholder="Ex: Sanduíche">                    
+                    </div>               
+                    <div class="col-md-auto">
+                            <label for="valor" class="form-label">Valor</label>
+                            <input type="text" class="form-control" id="valor" placeholder="Ex: 11">                    
+                    </div>
+                    <div class="col-md-auto col-md-4 mt-4">
+                        <label for="tipoProduto" class="form-label">Tipo do produto</label>
+                        <input type="text" class="form-control" id="tipoProduto" placeholder="Ex: Artesanal ou industrial">                    
+                    </div>
+                    <div class="col-md-auto col-md-4 mt-4">
+                        <label for="Sessao" class="form-label">Sessão</label>
+                        <input type="text" class="form-control" id="Sessao" placeholder="Ex: Massas">                    
+                    </div>                                                               
+                    
+                </div>                               
+               <button type="submit" class="btn btn-success mt-4"> Cadastrar </button>    
+            </form>
+        </div>
+    
+    </section>
 
 
 
