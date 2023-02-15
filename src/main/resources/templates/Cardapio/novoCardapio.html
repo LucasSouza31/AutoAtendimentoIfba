@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_br">
 
 <head th:replace="~{fragmentosPag::head('Novo Cardápio')}"></head>
 
@@ -12,17 +12,18 @@
             <form action="">
                 <div class="row mt-5">
                     <div class="col col-md-4">
-                        <label for="NomeEstabelecimento" class="form-label">Estabelecimento</label>
-                        <input type="text" class="form-control" id="NomeEstabelecimento" placeholder="Nome">                    
-                    </div>
-                    <div class="col-md-auto col-md-4">
                         <label for="NomeProduto" class="form-label">Nome do Produto</label>
                         <input type="text" class="form-control" id="NomeProduto" placeholder="Ex: Sanduíche">                    
-                    </div>               
-                    <div class="col-md-auto">
-                            <label for="valor" class="form-label">Valor</label>
-                            <input type="text" class="form-control" id="valor" placeholder="Ex: 11">                    
                     </div>
+                    <div class="col-md-auto col-md-4">
+                        <label for="descricao" class="form-label">Descrição do item</label>
+                        <input type="text" class="form-control" id="descricao" placeholder="Ex: Bebida fermentada">                    
+                    </div>               
+                    <div class="col-md-auto">                        
+                            <label for="valor" class="form-label">Valor</label>
+                            <input type="text" class="form-control" id="valor" placeholder="Ex: 11">                                              
+                    </div>
+                                      
                     <div class="col-md-auto col-md-4 mt-4">
                         <label for="tipoProduto" class="form-label">Tipo do produto</label>
                         <input type="text" class="form-control" id="tipoProduto" placeholder="Ex: Artesanal ou industrial">                    
