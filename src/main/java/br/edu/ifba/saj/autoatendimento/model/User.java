@@ -1,14 +1,7 @@
 package br.edu.ifba.saj.autoatendimento.model;
 
-import java.util.Set;
-
 import jakarta.annotation.Nonnull;
-import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.OneToMany;
 import jakarta.validation.constraints.Email;
 import lombok.Getter;
 import lombok.Setter;
