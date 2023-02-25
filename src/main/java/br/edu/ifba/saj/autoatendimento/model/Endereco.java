@@ -8,6 +8,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+
 public class Endereco extends AbstractEntity{
     
     @Nonnull
@@ -21,9 +22,5 @@ public class Endereco extends AbstractEntity{
     
     @Nonnull
     private String cep;
-
-    
-
-    
 
 }

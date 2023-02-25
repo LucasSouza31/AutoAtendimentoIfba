@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import jakarta.annotation.Nonnull;
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.ManyToOne;
@@ -31,7 +32,7 @@ public class Estabelecimento extends AbstractEntity{
     private String nome;
 
     @Nonnull
-    @OneToOne
+    @OneToOne(cascade=CascadeType.PERSIST )
     private Endereco endereco;
 
     @ManyToOne(fetch = FetchType.EAGER)
@@ -45,7 +46,5 @@ public class Estabelecimento extends AbstractEntity{
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "estabelecimento")
     private List<Cardapio> cardapios;
-
-
 
 }
