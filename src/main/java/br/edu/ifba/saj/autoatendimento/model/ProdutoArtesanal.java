@@ -16,6 +16,10 @@ public class ProdutoArtesanal extends AbstractEntity {
     @ManyToOne
     private Estabelecimento estabelecimento;
 
+    @Nonnull
+    private String nomeProdutoArtesanal;
+    
+
 
     
 }
