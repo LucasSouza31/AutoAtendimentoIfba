@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head th:replace="~{fragmentosPag::head('Novo Usuário')}"></head>
+<body>
+
+    <nav th:replace="~{fragmentosPag::nav}">usar fragmento</nav>
+
+       <div class="container mt-5">
+            <h3>Novo Caradápio</h3>
+            <form th:object="${pessoa}" th:action="@{/cadastrarCardapio}" method="post">
+                <div class="row mt-5">
+                    <div class="col col-md-4">
+                        <label for="firstName" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Ex: Júlio" th:field="*{firstName}">                    
+                    </div>
+                    <div class="col col-md-4">
+                        <label for="lastName" class="form-label">Sobrenome</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Ex: Santos" th:field="*{lastName}">                    
+                    </div>
+                    <div class="col col-md-4">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Ex: julio@gmail.com" th:field="*{email}">                    
+                    </div>
+                    <div class="col col-md-4">
+                        <label for="phone" class="form-label">Telefone</label>
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Ex: Júlio" th:field="*{phone}">                    
+                    </div>
+                    <div class="col col-md-4">
+                        <label for="dateOfBirth" class="form-label">Data de nascimento</label>
+                        <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" placeholder="Ex: 10/10/1999" th:field="*{dateOfBirth}">                    
+                    </div>
+                    <div class="col col-md-4">
+                        <label for="occupation" class="form-label">Ocupação</label>
+                        <input type="text" class="form-control" id="dateOfBirth" name="occupation" placeholder="Ex: Engenheiro(a)" th:field="*{occupation}">                    
+                    </div>
+
+
+
+                                                              
+                    
+                </div>                               
+               <button type="submit" class="btn btn-success mt-4"> Cadastrar </button>    
+            </form>
+        </div>
+    
+    </section>
+
+
+</body>
+</html>
