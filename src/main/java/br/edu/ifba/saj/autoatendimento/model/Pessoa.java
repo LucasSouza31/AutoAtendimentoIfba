@@ -13,16 +13,29 @@ import lombok.Setter;
 public class Pessoa extends AbstractEntity{
     @Nonnull
     private String firstName;
-    @Nonnull
+    
     private String lastName;
+
     @Email
     @Nonnull
     private String email;
+
     @Nonnull
     private String phone;
+    
     private LocalDate dateOfBirth;
-    @Nonnull
-    private String occupation;
-    private boolean important;
+
+    
+    private String occupation;   
+
+    // @Enumerated(EnumType.STRING)
+    // @ElementCollection(fetch = FetchType.EAGER)
+    // @Nonnull
+    // private Set<Role> roles;
+    
+    // @OneToMany(fetch = FetchType.LAZY, mappedBy = "proprietario")
+    // private Set<Estabelecimento> estabelecimento;
+
+
 
 }
