@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt_br">
 
@@ -9,19 +10,18 @@
     <section class="jumbotron">
         <div class="container mt-5">
             <h3>Novo Caradápio</h3>
-            <form action="">
+            <form th:object="${cardapio}" th:action="@{/cadastrarCardapio}" method="post">
                 <div class="row mt-5">
                     <div class="col col-md-4">
-                        <label for="NomeProduto" class="form-label">Nome do Produto</label>
-                        <input type="text" class="form-control" id="NomeProduto" placeholder="Ex: Sanduíche">                    
+                        <label for="nome" class="form-label">Nome do Produto</label>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Ex: Sanduíche" th:field="*{nome}">                    
                     </div>
                     <div class="col-md-auto col-md-4">
                         <label for="descricao" class="form-label">Descrição do item</label>
-                        <input type="text" class="form-control" id="descricao" placeholder="Ex: Bebida fermentada">                    
+                        <input type="text" class="form-control" id="descricao" name="descricao" placeholder="Ex: Bebida fermentada" th:field="*{descricao}">                    
                     </div>               
                     <div class="col-md-auto">                        
-                            <label for="valor" class="form-label">Valor</label>
-                            <input type="text" class="form-control" id="valor" placeholder="Ex: 11">                                              
+                     <!-- Foi deletado, este campo era referente ao valor, o mesmo não era solicitado -->
                     </div>
                                       
                     <div class="col-md-auto col-md-4 mt-4">
