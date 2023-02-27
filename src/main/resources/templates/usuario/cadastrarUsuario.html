@@ -6,8 +6,8 @@
     <nav th:replace="~{fragmentosPag::nav}">usar fragmento</nav>
 
        <div class="container mt-5">
-            <h3>Novo Caradápio</h3>
-            <form th:object="${pessoa}" th:action="@{/cadastrarCardapio}" method="post">
+            <h3>Novo Usuário</h3>
+            <form th:object="${pessoa}" th:action="@{/cadastrarPessoa}" method="post">
                 <div class="row mt-5">
                     <div class="col col-md-4">
                         <label for="firstName" class="form-label">Nome</label>
