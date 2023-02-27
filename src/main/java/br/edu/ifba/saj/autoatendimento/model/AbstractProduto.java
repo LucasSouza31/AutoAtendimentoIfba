@@ -12,8 +12,6 @@ import lombok.Setter;
 public abstract class AbstractProduto extends AbstractEntity {
     @Nonnull
     private String nomeProduto;
-    
-    @Nonnull
-    private double preco;
+  
     
 }

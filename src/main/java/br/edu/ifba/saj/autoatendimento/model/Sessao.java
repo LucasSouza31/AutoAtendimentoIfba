@@ -37,6 +37,8 @@ public class Sessao extends AbstractEntity{
     @ManyToOne
     private Cardapio cardapio;
 
+    
+
 
 
 
