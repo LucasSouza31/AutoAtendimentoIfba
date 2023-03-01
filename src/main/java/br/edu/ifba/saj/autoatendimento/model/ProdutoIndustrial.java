@@ -12,6 +12,9 @@ import lombok.Setter;
 
 public class ProdutoIndustrial extends AbstractEntity {
 
+    @Nonnull
+    @ManyToOne
+    private Estabelecimento estabelecimento;
 
     @Nonnull
     private String nomeProdutoIndustrial;
