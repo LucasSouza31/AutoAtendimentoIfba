@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_br" html xmlns:th="http://www.thymeleaf.org">
     <head th:replace="~{fragmentosPag::head('Novo Usuário')}"></head>
 <body>
 
@@ -11,7 +11,7 @@
                 <div class="row mt-5">
                     <div class="col col-md-4">
                         <label for="firstName" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Ex: Júlio" th:field="*{firstName}">                    
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Ex: Júlio"  th:field="*{firstName}">                    
                     </div>
                     <div class="col col-md-4">
                         <label for="lastName" class="form-label">Sobrenome</label>
