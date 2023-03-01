@@ -16,11 +16,6 @@ public class EstabelecimentoController {
     @Autowired
     private EstabelecimentoService estabelecimentoService;
 
-    // @GetMapping("/cadastrarEstabelecimento")
-    // public String CadastrarEstabelecimento() {
-    //     return "estabelecimento/estabelecimentoCadastrar";
-    // }
-
     @GetMapping("/cadastrarEstabelecimento")
     public String novoEstabelecimento(Model model) {
         model.addAttribute("estabelecimento", new Estabelecimento());

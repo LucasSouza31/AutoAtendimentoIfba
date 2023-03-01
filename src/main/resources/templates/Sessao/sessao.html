@@ -14,20 +14,20 @@
 
             <div class="row mt-5">
                 <div class="col col-md-6">
-                    <form action="" >
+                    <form th:object="${sessao}" th:action="@{/cadastrarSessao}" method="post" >
                         <div class="mb-3">
-                            <label for="nomeSessao" class="form-label">Nome da Sessão</label>
-                            <input type="text" class="form-control" id="nomeSessao" placeholder="Ex: Massas">
+                            <label for="nome" class="form-label">Nome da Sessão</label>
+                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Ex: Massas" th:field="*{nome}">
                         </div>
                         <div class="mb-3">
-                            <label for="descricaoSessao" class="form-label">Descrição</label>
-                            <textarea class="form-control" id="descricaoSessao" rows="3"></textarea>
+                            <label for="descricao" class="form-label">Descrição</label>
+                            <textarea class="form-control" id="descricao" name="descricao" th:field="*{descricao}" rows="3"></textarea>
                         </div>
                         <button type="submit" class="btn btn-success">Enviar</button>
                     </form>
                 </div>
 
-                <div class="col-md-auto">
+                <div class="col-md-auto mt-5">
                     <p>Cadastre a sua sessão. Após isso, cadastre o cardápio!</p>
                 </div>
             </div>
