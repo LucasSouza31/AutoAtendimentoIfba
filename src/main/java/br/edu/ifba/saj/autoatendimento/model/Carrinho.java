@@ -29,7 +29,7 @@ public class Carrinho extends AbstractEntity{
 
     @Nonnull
     @ManyToOne
-    private User usuario;
+    private Pessoa usuario;
 
 
 }

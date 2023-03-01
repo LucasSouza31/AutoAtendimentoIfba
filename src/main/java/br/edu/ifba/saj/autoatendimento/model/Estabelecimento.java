@@ -36,7 +36,7 @@ public class Estabelecimento extends AbstractEntity{
     private Endereco endereco;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    private User proprietario;
+    private Pessoa proprietario;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "estabelecimento")
     private List<Carrinho> carrinhos;
