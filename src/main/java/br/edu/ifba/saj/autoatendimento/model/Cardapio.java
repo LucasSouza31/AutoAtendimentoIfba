@@ -39,6 +39,4 @@ public class Cardapio extends AbstractEntity{
     @OneToMany(mappedBy = "cardapio")
     private List<Sessao> sessao;
 
-
-
 }
