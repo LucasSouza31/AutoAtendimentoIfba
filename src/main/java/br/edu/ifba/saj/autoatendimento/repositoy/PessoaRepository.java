@@ -8,6 +8,8 @@ import br.edu.ifba.saj.autoatendimento.model.Pessoa;
 
 
 public interface PessoaRepository extends JpaRepository<Pessoa, UUID>{
+
+    Pessoa findByEmail(String email);
     
 }
 
