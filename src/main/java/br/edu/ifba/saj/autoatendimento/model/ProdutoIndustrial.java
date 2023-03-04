@@ -10,7 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 
-public class ProdutoIndustrial extends AbstractEntity {
+public class ProdutoIndustrial extends AbstractProduto {
 
     @Nonnull
     @ManyToOne
