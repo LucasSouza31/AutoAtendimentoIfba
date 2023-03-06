@@ -42,9 +42,9 @@
                     <input type="text" class="form-control" id="pais" placeholder="Ex: Brasil" name="endereco.pais" th:field="*{endereco.pais}">                                  
                 </div>  
             </div>
-
+            
+           <input type="hidden" id="id" th:field="*{id}" /> 
            <button type="submit" class="btn btn-success mt-4"> Cadastrar </button>
-
         </form>
         <div>
             <a class="btn btn-success mt-4" th:href="@{/listarEstabelecimento}" role="button">

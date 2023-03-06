@@ -31,7 +31,7 @@ public class EstabelecimentoController {
         return "estabelecimento/estabelecimentoCadastrar";
     }
 
-    @PostMapping("/salvarEstabelecimento")
+    @PostMapping("/cadastrarEstabelecimento")
     public String cadastrarEstabelecimento(@ModelAttribute("estabelecimento") Estabelecimento estabelecimento) {        
         estabelecimentoService.salvar(estabelecimento);
         return "redirect:/listarEstabelecimento";
@@ -39,13 +39,9 @@ public class EstabelecimentoController {
 
     @GetMapping("/listarEstabelecimento")
     public String listarEstabelecimento(Model model) {
-
         List<Estabelecimento> estabelecimentos = null;
-
        estabelecimentos = this.estabelecimentoService.listar();
-
         model.addAttribute("estabelecimentos", estabelecimentos);
-
         return "estabelecimento/estabelecimento";
     }
 
@@ -63,7 +59,6 @@ public class EstabelecimentoController {
     public String deletaRelatorio(@PathVariable("id") UUID id, Model model, RedirectAttributes attributes) {
 
         Optional<Estabelecimento> estabelecimento = estabelecimentoService.buscar(id);
-
 
         estabelecimentoService.delete(estabelecimento.get().getId());
 
