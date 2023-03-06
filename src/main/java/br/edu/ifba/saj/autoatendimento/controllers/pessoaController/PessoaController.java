@@ -38,7 +38,7 @@ public class PessoaController {
      @PostMapping("/cadastrarPessoa")
      public String cadastrarEstabelecimento(@ModelAttribute("pessoa") Pessoa pessoa) {
          usuarioService.salvar(pessoa);
-         return "redirect:/cadastrarUsuario";       
+         return "redirect:/cadastrarPessoa";       
      }
 
 

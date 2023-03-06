@@ -31,7 +31,7 @@
                     </div>
 
                     <div class="col col-md-4 ">
-                        <label for="privilegio" class="form-label">Privilégio</label>
+                        <label for="tipoUsuario" class="form-label">Privilégio</label>
                         <select class="form-select" aria-label="Default select example" name="tipoUsuario" >
                             <option th:each="status : ${tipoUsuario}"
                              th:value="${status}" th:text="${status}">Sessão</option>

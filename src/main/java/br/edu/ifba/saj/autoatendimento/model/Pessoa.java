@@ -31,8 +31,7 @@ public class Pessoa extends AbstractEntity{
     
     private LocalDate dateOfBirth;
 
-    
-    private String occupation;   
+        
 
      @OneToMany(fetch = FetchType.LAZY, mappedBy = "proprietario")
      private Set<Estabelecimento> estabelecimento;
