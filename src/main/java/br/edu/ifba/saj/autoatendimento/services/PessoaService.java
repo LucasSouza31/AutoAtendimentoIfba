@@ -23,9 +23,10 @@ public class PessoaService{
         pessoaRepository.save(pessoa);
     }
 
-    public Pessoa buscarPorId(UUID idProprietario) {
-        return null;
+    public void buscarEmail(Pessoa pessoa) {
+        pessoa.getId();
     }
+  
 
 }
 

@@ -39,16 +39,19 @@
                 </div>    
                 <div class="col-md-auto col-md-4 mt-4">
                     <label for="pais" class="form-label">País</label>
-                    <input type="text" class="form-control" id="pais" placeholder="Ex: Brasil" name="endereco.pais" th:field="*{endereco.pais}">       
-                                 
-                </div>          
-
-                
+                    <input type="text" class="form-control" id="pais" placeholder="Ex: Brasil" name="endereco.pais" th:field="*{endereco.pais}">                                  
+                </div>  
             </div>
 
            <button type="submit" class="btn btn-success mt-4"> Cadastrar </button>
 
         </form>
+        <div>
+            <a class="btn btn-success mt-4" th:href="@{/listarEstabelecimento}" role="button">
+              <span title="Voltar" aria-hidden="true"></span>
+              <span>Voltar</span>
+            </a>
+        </div>
     </div>
 
 </section>

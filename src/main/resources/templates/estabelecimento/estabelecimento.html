@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt_br" html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragmentosPag::head('Cadastrar')}"></head>
+
+<body>
+    <nav th:replace="~{fragmentosPag::nav}">usar fragmento</nav>
+
+<section class="jumbotron">
+    <div class="container mt-5">
+        <h3>Estabelecimento</h3>
+
+
+
+        <table class="table mt-5">
+
+            <thead>
+              <tr>                                         
+                
+                <th scope="col">Nome</th>
+                <th scope="col">Proprietário</th>
+                <th scope="col">Editar</th>
+                <th scope="col">Deletar</th>
+                            
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr th:each="estabelecimento : ${estabelecimentos}">                
+
+                <td ><span th:text="${estabelecimento.nome}"></span></td>
+
+                <td colspan="1">              
+
+                <td>
+                  <a th:href="@{/estabelecimento/editar/{id}(id=${estabelecimento.id})}"
+                    class="btn btn-primary"><i class="fas fa fa-edit ml-0"></i></a>
+                </td>
+
+                <td>
+                  <a th:href="@{/estabelecimento/deletar/{id}(id=${estabelecimento.id})}"
+                    class="btn btn-primary"><i class="fas fa-trash-alt ml-0"></i>
+                  </a>
+                </td>
+          
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <div>
+            <a class="btn btn-success mt-4" th:href="@{/cadastrarEstabelecimento}" role="button">
+              <span title="Cadastro" aria-hidden="true"></span>
+              <span>Novo Estabelecimento</span>
+            </a>
+          </div>
+
+    </div>
+
+</section>
+    
+    
+
+</body>
+
+</html>

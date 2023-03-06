@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.util.Set;
 
 import jakarta.annotation.Nonnull;
-import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;

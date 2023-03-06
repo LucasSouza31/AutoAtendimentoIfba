@@ -20,19 +20,12 @@ public class PessoaController {
     private PessoaService usuarioService;
 
 
-    //  @GetMapping("/cadastrarPessoa")
-    //  public String CadastrarProduto() {
-    //      return "usuario/cadastrarUsuario";
-    //  }
-
      @GetMapping("/cadastrarPessoa")
      public ModelAndView novoUsuario(Model model) {
         ModelAndView mv= new ModelAndView("usuario/cadastrarUsuario");
-        mv.addObject("tipoUsuario", TipoUsuario.values());
-
-        model.addAttribute("pessoa", new Pessoa());
-         
-         return mv;
+        mv.addObject("tipoUsuario", TipoUsuario.values());        
+        model.addAttribute("pessoa", new Pessoa());                 
+        return mv;
      }
 
      @PostMapping("/cadastrarPessoa")

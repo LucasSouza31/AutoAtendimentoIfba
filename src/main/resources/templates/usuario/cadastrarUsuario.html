@@ -26,17 +26,16 @@
                         <input type="text" class="form-control" id="phone" name="phone" placeholder="Ex: Júlio" th:field="*{phone}">                    
                     </div>
                     <div class="col col-md-4">
-                        <label for="dateOfBirth" class="form-label">Data de nascimento</label>
-                        <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" placeholder="Ex: 10/10/1999" th:field="*{dateOfBirth}">                    
+                        <label for="phone" class="form-label">Telefone</label>
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Ex: Júlio" th:field="*{phone}">                    
                     </div>
+
 
                     <div class="col col-md-4 ">
                         <label for="tipoUsuario" class="form-label">Privilégio</label>
                         <select class="form-select" aria-label="Default select example" name="usuario" >
                             <option th:each="status : ${tipoUsuario}"
-                             th:value="${status}" th:text="${status}">Sessão</option>
-                          
-                           
+                             th:value="${status}" th:text="${status}">Sessão</option>                   
                         </select>                                        
                     </div>
                                       

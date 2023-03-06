@@ -12,9 +12,9 @@ import lombok.Setter;
 
 public class ProdutoIndustrial extends AbstractProduto {
 
-    @Nonnull
-    @ManyToOne
-    private Estabelecimento estabelecimento;
+    // @Nonnull
+    // @ManyToOne
+    // private Estabelecimento estabelecimento;
 
     @Nonnull
     private String descricao;
