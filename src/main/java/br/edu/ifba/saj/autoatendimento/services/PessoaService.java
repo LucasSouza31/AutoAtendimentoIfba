@@ -1,6 +1,8 @@
 package br.edu.ifba.saj.autoatendimento.services;
 
 
+import java.util.UUID;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,14 +17,15 @@ public class PessoaService{
     @Autowired
     private PessoaRepository pessoaRepository;
 
+    
 
     public void salvar(Pessoa pessoa) {
         pessoaRepository.save(pessoa);
     }
 
-
-
-
+    public Pessoa buscarPorId(UUID idProprietario) {
+        return null;
+    }
 
 }
 

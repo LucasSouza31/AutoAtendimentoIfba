@@ -17,7 +17,7 @@ public class ProdutoArtesanal extends AbstractProduto {
     private Estabelecimento estabelecimento;
 
     @Nonnull
-    private String nomeProdutoArtesanal;
+    private String descricao;
     
 
 

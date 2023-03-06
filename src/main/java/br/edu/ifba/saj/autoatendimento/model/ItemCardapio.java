@@ -31,13 +31,13 @@ public class ItemCardapio extends AbstractEntity{
         @ManyToOne
         private Sessao sessao;
 
-        // @ManyToOne
-        // private AbstractProduto produto; 
+         @ManyToOne
+         private AbstractProduto produto; 
             
-        @ManyToOne
-        private ProdutoIndustrial produto;
+        // @ManyToOne
+        // private ProdutoIndustrial produto;
 
-        @ManyToOne
-        private ProdutoArtesanal produto2;
+        // @ManyToOne
+        // private ProdutoArtesanal produto2;
 
 }

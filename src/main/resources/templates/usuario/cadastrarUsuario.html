@@ -29,15 +29,17 @@
                         <label for="dateOfBirth" class="form-label">Data de nascimento</label>
                         <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" placeholder="Ex: 10/10/1999" th:field="*{dateOfBirth}">                    
                     </div>
-                    <div class="col col-md-4">
-                        <label for="occupation" class="form-label">Ocupação</label>
-                        <input type="text" class="form-control" id="dateOfBirth" name="occupation" placeholder="Ex: Engenheiro(a)" th:field="*{occupation}">                    
+
+                    <div class="col col-md-4 ">
+                        <label for="privilegio" class="form-label">Privilégio</label>
+                        <select class="form-select" aria-label="Default select example" name="tipoUsuario" >
+                            <option th:each="status : ${tipoUsuario}"
+                             th:value="${status}" th:text="${status}">Sessão</option>
+                          
+                           
+                        </select>                                        
                     </div>
-
-
-
-                                                              
-                    
+                                      
                 </div>                               
                <button type="submit" class="btn btn-success mt-4"> Cadastrar </button>    
             </form>

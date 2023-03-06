@@ -10,11 +10,12 @@ import br.edu.ifba.saj.autoatendimento.model.Estabelecimento;
 import br.edu.ifba.saj.autoatendimento.services.EstabelecimentoService;
 
 @Controller
-
 public class EstabelecimentoController {
 
     @Autowired
     private EstabelecimentoService estabelecimentoService;
+
+    
 
     @GetMapping("/cadastrarEstabelecimento")
     public String novoEstabelecimento(Model model) {
@@ -23,12 +24,9 @@ public class EstabelecimentoController {
     }
 
     @PostMapping("/cadastrarEstabelecimento")
-    public String cadastrarEstabelecimento(@ModelAttribute("estabelecimento") Estabelecimento estabelecimento) {
+    public String cadastrarEstabelecimento(@ModelAttribute("estabelecimento") Estabelecimento estabelecimento) {        
         estabelecimentoService.salvar(estabelecimento);
         return "redirect:/cadastrarEstabelecimento";
     }
-
-
-
 
 }
