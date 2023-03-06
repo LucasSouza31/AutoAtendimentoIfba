@@ -38,8 +38,8 @@ public class Pessoa extends AbstractEntity{
 
      @Nonnull
      @Enumerated(EnumType.STRING)
-     @ElementCollection(fetch = FetchType.EAGER)
-     private Set<TipoUsuario> usuario;
+    // @ElementCollection(fetch = FetchType.EAGER)
+     private TipoUsuario usuario;
  
 
 
