@@ -19,7 +19,5 @@ public class ProdutoIndustrial extends AbstractProduto {
     @Nonnull
     private String descricao;
     
-
-
     
 }

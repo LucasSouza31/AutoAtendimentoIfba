@@ -21,10 +21,10 @@ public class CardapioController {
     @Autowired
     private EstabelecimentoRepository estabelecimento;
     
-@GetMapping("/cardapio")    
-public String exibirCardapio() {
-    return "Cardapio/exibirCardapio";
-}
+// @GetMapping("/cardapio")    
+// public String exibirCardapio() {
+//     return "Cardapio/exibirCardapio";
+// }
 
 @GetMapping("/cadastrarCardapio")    
 public String novoCardapio(Model model) {
@@ -34,7 +34,7 @@ public String novoCardapio(Model model) {
 
 @PostMapping("/cadastrarCardapio")
 public String cadastrarCardapio( @ModelAttribute("cardapio") Cardapio cardapio) {
-    cardapio.setEstabelecimento(estabelecimento.getReferenceById(null));
+   
     cardapioService.salvar(cardapio);
     return "redirect:/cadastrarCardapio";
 }
