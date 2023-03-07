@@ -52,10 +52,8 @@ public class EstabelecimentoController {
     @GetMapping("estabelecimento/editar/{id}")
     public String showUpdateForm(@PathVariable("id") UUID id, Model model, Optional<Estabelecimento> estabelecimento) {
 
-        estabelecimento = this.estabelecimentoService.buscar(id);
-              
+        estabelecimento = this.estabelecimentoService.buscar(id);              
         model.addAttribute("estabelecimento", estabelecimento);
-
         return "estabelecimento/estabelecimentoCadastrar";
     }
 
@@ -63,9 +61,7 @@ public class EstabelecimentoController {
     public String deletaRelatorio(@PathVariable("id") UUID id, Model model, RedirectAttributes attributes) {
 
         Optional<Estabelecimento> estabelecimento = estabelecimentoService.buscar(id);
-
         estabelecimentoService.delete(estabelecimento.get().getId());
-
         return "redirect:/listarEstabelecimento";
     }
 

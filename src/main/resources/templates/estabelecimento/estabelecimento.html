@@ -36,8 +36,6 @@
                 <td ><span th:text="${estabelecimento.nome}"></span></td>
                 <td ><span th:text="${estabelecimento.proprietario.firstName} + ' ' + ${estabelecimento.proprietario.lastName}"></span></td>
 
-                            
-
                 <td>
                   <a th:href="@{/estabelecimento/editar/{id}(id=${estabelecimento.id})}"
                     class="btn btn-primary"><i class="fas fa fa-edit ml-0">Editar</i></a>
