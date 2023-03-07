@@ -8,9 +8,14 @@
 
 <section class="jumbotron">
     <div class="container mt-5">
-        <h3>Estabelecimento</h3>
+        <h3>Estabelecimentos</h3>
 
-
+        <div>
+          <a class="btn btn-success mt-4" th:href="@{/cadastrarEstabelecimento}" role="button">
+            <span title="Cadastro" aria-hidden="true"></span>
+            <span>Novo</span>
+          </a>
+        </div>
 
         <table class="table mt-5">
 
@@ -29,8 +34,9 @@
               <tr th:each="estabelecimento : ${estabelecimentos}">                
 
                 <td ><span th:text="${estabelecimento.nome}"></span></td>
+                <td ><span th:text="${estabelecimento.proprietario.firstName} + ' ' + ${estabelecimento.proprietario.lastName}"></span></td>
 
-                <td colspan="1">              
+                            
 
                 <td>
                   <a th:href="@{/estabelecimento/editar/{id}(id=${estabelecimento.id})}"
@@ -47,14 +53,7 @@
               </tr>
             </tbody>
           </table>
-
-
-          <div>
-            <a class="btn btn-success mt-4" th:href="@{/cadastrarEstabelecimento}" role="button">
-              <span title="Cadastro" aria-hidden="true"></span>
-              <span>Novo Estabelecimento</span>
-            </a>
-          </div>
+  
 
     </div>
 

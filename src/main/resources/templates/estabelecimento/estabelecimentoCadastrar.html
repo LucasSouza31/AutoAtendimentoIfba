@@ -40,9 +40,23 @@
                 <div class="col-md-auto col-md-4 mt-4">
                     <label for="pais" class="form-label">País</label>
                     <input type="text" class="form-control" id="pais" placeholder="Ex: Brasil" name="endereco.pais" th:field="*{endereco.pais}">                                  
-                </div>  
+                </div>             
+           
+                <div class="form-row">
+                    <div class="col-md-auto col-md-4 mt-4">
+                        <label for="p">Proprietário</label>
+                        <select id="proprietario" class="form-control" th:field="*{proprietario}">
+                            <option value="">Selecione...</option>
+                            <option th:each="p : ${proprietarios}" th:value="${p.id}" th:text="${p.firstName} + ' ' + ${p.lastName}"></option>
+                        </select>
+                        <div class="invalid-feedback">
+    
+                        </div>
+                    </div>
+                </div>
+           
             </div>
-            
+
            <input type="hidden" id="id" th:field="*{id}" /> 
            <button type="submit" class="btn btn-success mt-4"> Cadastrar </button>
         </form>

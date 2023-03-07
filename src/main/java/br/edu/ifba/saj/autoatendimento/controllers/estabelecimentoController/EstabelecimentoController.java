@@ -14,7 +14,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import br.edu.ifba.saj.autoatendimento.model.Estabelecimento;
+import br.edu.ifba.saj.autoatendimento.model.Pessoa;
+import br.edu.ifba.saj.autoatendimento.model.TipoUsuario;
 import br.edu.ifba.saj.autoatendimento.services.EstabelecimentoService;
+import br.edu.ifba.saj.autoatendimento.services.PessoaService;
 
 @Controller
 public class EstabelecimentoController {
@@ -22,7 +25,8 @@ public class EstabelecimentoController {
     @Autowired
     private EstabelecimentoService estabelecimentoService;
 
-    
+    @Autowired
+    private PessoaService pessoaService;
 
     @GetMapping("/cadastrarEstabelecimento")
     public String novoEstabelecimento(Model model) {
@@ -64,5 +68,10 @@ public class EstabelecimentoController {
 
         return "redirect:/listarEstabelecimento";
     }
+
+    @ModelAttribute("proprietarios")
+    public List<Pessoa> listarPropietarios() {
+		return pessoaService.listarTiposUsuarios(TipoUsuario.PROPRIETÁRIO);
+	}
 
 }

@@ -1,5 +1,5 @@
 package br.edu.ifba.saj.autoatendimento.model;
 
 public enum TipoUsuario {
-    ADMINISTRADOR, CONSUMIDOR, PROPIETÁRIO;
+    ADMINISTRADOR, CONSUMIDOR, PROPRIETÁRIO;
 }
